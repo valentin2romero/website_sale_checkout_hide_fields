@@ -3,8 +3,36 @@
 
     <template id="snippet_options" inherit_id="website_sale.snippet_options" priority="1" active="True">
         <xpath expr="//div[@data-selector='main:has(.oe_website_sale .wizard)']" position="inside">
+            <we-checkbox string="Hidden Name Field"
+                data-customize-website-views="website_sale_checkout_hide_fields.name_hidden"
+                data-no-preview="true"
+                data-reload="/"/>
+            <we-checkbox string="Hidden Email Field"
+                        data-customize-website-views="website_sale_checkout_hide_fields.email_hidden"
+                        data-no-preview="true"
+                        data-reload="/"/>
+            <we-checkbox string="Hidden Phone Field"
+                        data-customize-website-views="website_sale_checkout_hide_fields.phone_hidden"
+                        data-no-preview="true"
+                        data-reload="/"/>
+            <we-checkbox string="Hidden Street Field"
+                        data-customize-website-views="website_sale_checkout_hide_fields.street_hidden"
+                        data-no-preview="true"
+                        data-reload="/"/>
             <we-checkbox string="Hidden Street 2 Field"
                         data-customize-website-views="website_sale_checkout_hide_fields.street2_hidden"
+                        data-no-preview="true"
+                        data-reload="/"/>
+            <we-checkbox string="Hidden City Field"
+                        data-customize-website-views="website_sale_checkout_hide_fields.city_hidden"
+                        data-no-preview="true"
+                        data-reload="/"/>
+            <we-checkbox string="Hidden Country Field"
+                        data-customize-website-views="website_sale_checkout_hide_fields.country_hidden"
+                        data-no-preview="true"
+                        data-reload="/"/>
+            <we-checkbox string="Hidden State Field"
+                        data-customize-website-views="website_sale_checkout_hide_fields.state_hidden"
                         data-no-preview="true"
                         data-reload="/"/>
         </xpath>

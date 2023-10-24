@@ -1,13 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+    <template id="name_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//div[contains(@t-attf-class, 'div_name')]" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+    </template>
+
+    <template id="email_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//div[contains(@id, 'div_email')]" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+    </template>
+
+    <template id="phone_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//div[contains(@id, 'div_phone')]" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+    </template>
+
+    <template id="street_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//div[contains(@t-attf-class, 'div_street')]" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+    </template>
+
     <template id="street2_hidden" inherit_id="website_sale.address" priority="1" active="False">
-        <xpath expr="//label[@for='street2']" position="attributes">
+        <xpath expr="//div[contains(@t-attf-class, 'div_street2')]" position="attributes">
             <attribute name="hidden">True</attribute>
         </xpath>
-        <xpath expr="//input[@name='street2']" position="attributes">
+    </template>
+
+    <template id="city_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//div[contains(@t-attf-class, 'div_city')]" position="attributes">
             <attribute name="hidden">True</attribute>
         </xpath>
-    </template>    
+    </template>
+
+    <template id="country_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//div[contains(@t-attf-class, 'div_country')]" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+    </template>
+    
+    <template id="state_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//div[contains(@t-attf-class, 'div_state')]" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+    </template>
 
 </odoo>
