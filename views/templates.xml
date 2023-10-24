@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="street2_hidden" inherit_id="website_sale.address" priority="1" active="False">
+        <xpath expr="//label[@for='street2']" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+        <xpath expr="//input[@name='street2']" position="attributes">
+            <attribute name="hidden">True</attribute>
+        </xpath>
+    </template>    
+
+</odoo>

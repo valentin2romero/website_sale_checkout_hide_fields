@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="snippet_options" inherit_id="website_sale.snippet_options" priority="1" active="True">
+        <xpath expr="//div[@data-selector='main:has(.oe_website_sale .wizard)']" position="inside">
+            <we-checkbox string="Hidden Street 2 Field"
+                        data-customize-website-views="website_sale_checkout_hide_fields.street2_hidden"
+                        data-no-preview="true"
+                        data-reload="/"/>
+        </xpath>
+    </template>    
+
+</odoo>
